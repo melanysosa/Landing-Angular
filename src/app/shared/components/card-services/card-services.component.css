@@ -1,0 +1,16 @@
+.text-hover {
+  background-size: 100% 100%;
+  background-position: 50% 0%;
+  transition: all 0.3s ease-in-out;
+  animation: none;
+}
+
+
+@keyframes myAnim {
+  from {
+    background-position: 50% 0%;
+  }
+  to {
+    background-position: 50% 100%;
+  }
+}

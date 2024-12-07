@@ -1,0 +1,17 @@
+.container-contact {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.40) 0%, rgba(0, 0, 0, 0.40) 100%), url('../../../../public/assets/images/bg-contact.jpg') lightgray 50% / cover no-repeat;
+  height: 100vh; 
+  color: white;
+}
+.animation{
+    animation: myAnim2 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnim2 {
+	from{
+		transform: scaleY(0.4);
+	}
+
+	to {
+		transform: scaleY(1);
+	}
+}

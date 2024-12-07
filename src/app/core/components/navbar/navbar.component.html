@@ -1,0 +1,24 @@
+<nav
+    class="absolute w-full flex items-center justify-between transition-colors duration-300 bg-transparent ring-white ring-1 px-5 py-4">
+    <div>
+        <li [routerLink]="['/']" class="list-none text-white uppercase font-bold cursor-pointer py-2">
+            Croma.I
+        </li>
+    </div>
+
+    <ul class="flex gap-5 list-none m-0">
+        <li [routerLink]="['/']" class="hover: text-white uppercase font-bold cursor-pointer px-4 py-2">
+            Inicio
+        </li>
+        <li [routerLink]="['/about']" class="text-white uppercase font-bold cursor-pointer px-4 py-2">
+            Sobre Nosotros
+        </li>
+        
+        <li [routerLink]="['/ourservices']" class="text-white uppercase font-bold cursor-pointer px-4 py-2">
+            Servicios
+        </li>
+        <li [routerLink]="['/contact']" class="text-white uppercase font-bold cursor-pointer px-4 py-2">
+            Contacto
+        </li>
+    </ul>
+</nav>

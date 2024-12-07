@@ -1,0 +1,25 @@
+.container-home {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.4) 100%
+    ),
+    url("../../../../public/assets/images/bg-home.jpg") lightgray 50% / cover
+      no-repeat;
+  height: 100vh;
+  color: white;
+}
+.animation {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
+@keyframes myAnim {
+  from {
+    transform: scale(0.7);
+    transform-origin: 0% 50%;
+  }
+
+  to {
+    transform: scale(1);
+    transform-origin: 0% 50%;
+  }
+}
