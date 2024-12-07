@@ -1,3 +1,47 @@
-<section class="bg-[#0F0F0E] h-screen text-[#FCFAF8]">
+<section class="container-about py-28 flex justify-center items-center">
 
+    <div class="flex gap-6">
+        <div [style.backgroundImage]="'url(' + imageUrl + ')'" class="rounded-[20px] w-full bg-cover bg-center ">
+            <div
+                class="relative flex-col w-[600px] py-4 rounded-[20px] flex items-center justify-center bg-cover bg-center transition-opacity duration-300 backdrop-blur-[2px] bg-[#D77200]/70 h-full">
+                <div>
+
+                    <div class="flex flex-col px-24 py-10 gap-4">
+                        <p class="text-4xl font-bold">Sobre Nosotros</p>
+                        <p class="text-2xl font-medium">En Croma Interiorismo diseñamos espacios únicos que reflejan tu
+                            estilo. Nuestra misión
+                            es combinar funcionalidad y
+                            estética para transformar ambientes. Creemos en la innovación y la atención al detalle como
+                            clave para crear
+                            experiencias memorables.</p>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div>
+            <div class="flex gap-5 h-[300px]">
+                @for (cards of cardsAbout; track cards.id) {
+                <app-card-images [title]="cards.title" [imageUrl]="cards.imageUrl" [hoverText]="cards.hoverText">
+                </app-card-images>
+
+                }
+            </div>
+            <div class="flex items-center p-12 w-[600px] bg-[#D77200] h-[290px] rounded-[20px]">
+                <div class="flex flex-col w-full justify-center gap-4">
+                    <p class="text-4xl font-bold">Nuestra Historia</p>
+                    <p class="text-2xl font-medium">Desde nuestros inicios, en Croma Interiorismo nos hemos dedicado a
+                        transformar ideas en espacios llenos de vida. Cada
+                        proyecto es una oportunidad para plasmar creatividad, funcionalidad y la esencia de nuestros
+                        clientes</p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
 </section>
