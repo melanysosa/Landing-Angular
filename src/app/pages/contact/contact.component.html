@@ -1,16 +1,19 @@
-<section class="container-contact flex justify-center items-center min-h-screen">
+<section class="container-contact flex justify-center items-center min-h-screen bg-orange-100">
     <div
-        class="animation flex flex-col justify-between items-center w-[800px] p-10 rounded-[20px] bg-[rgba(219,134,39,0.60)] shadow-md backdrop-blur-[4px] gap-5">
-        <p class="text-white text-4xl font-bold mb-4">
+        class="animation flex flex-col justify-between items-center w-[90%] md:w-[800px] p-6 md:p-10 rounded-[20px] bg-[rgba(219,134,39,0.60)] shadow-md backdrop-blur-[4px] gap-4 md:gap-5">
+
+        <p class="text-white text-2xl md:text-4xl font-bold mb-2 md:mb-4 text-center">
             {{ titulo }}
         </p>
-        <p class="text-white mb-6 text-xl font-semibold">
+
+        <p class="text-white mb-4 md:mb-6 text-md md:text-xl font-semibold  md:text-left">
             {{ descripcion }}
         </p>
-        <div class="flex gap-4">
-            <p class="text-white text-lg">{{ email }}</p>
-            <p class="text-white text-lg">{{ instagram }}</p>
-            <p class="text-white text-lg"> {{ telefono }}</p>
+
+        <div class="flex flex-wrap justify-start  gap-2 md:gap-4 w-full">
+            <p class="text-white text-sm md:text-lg">{{ email }}</p>
+            <p class="text-white text-sm md:text-lg">{{ instagram }}</p>
+            <p class="text-white text-sm md:text-lg">{{ telefono }}</p>
         </div>
     </div>
 </section>
