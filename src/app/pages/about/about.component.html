@@ -1,14 +1,16 @@
 <section class="container-about py-28 flex justify-center items-center">
 
-    <div class="flex gap-6">
-        <div [style.backgroundImage]="'url(' + imageUrl + ')'" class="rounded-[20px] w-full bg-cover bg-center ">
+    <div class="animation-mobile flex flex-col md:flex-row gap-6 justify-center items-center ">
+        <div [style.backgroundImage]="'url(' + imageUrl + ')'"
+            class="animation-1 rounded-[20px] w-[300px] sm:w-[600px]  bg-cover bg-center  ">
             <div
-                class="relative flex-col w-[600px] py-4 rounded-[20px] flex items-center justify-center bg-cover bg-center transition-opacity duration-300 backdrop-blur-[2px] bg-[#D77200]/70 h-full">
+                class=" relative flex-col w-[300px] sm:w-[600px] py-4 rounded-[20px] flex items-center justify-center bg-cover bg-center transition-opacity duration-300 backdrop-blur-[2px] bg-[#D77200]/70 h-[400px] sm:h-[590px]">
                 <div>
 
-                    <div class="flex flex-col px-24 py-10 gap-4">
-                        <p class="text-4xl font-bold">Sobre Nosotros</p>
-                        <p class="text-2xl font-medium">En Croma Interiorismo diseñamos espacios únicos que reflejan tu
+                    <div class="flex flex-col px-10 md:px-24 py-10 gap-4">
+                        <p class="text-xl sm:text-4xl font-bold">Sobre Nosotros</p>
+                        <p class="text-lg md:text-2xl font-medium">En Croma Interiorismo diseñamos espacios únicos que
+                            reflejan tu
                             estilo. Nuestra misión
                             es combinar funcionalidad y
                             estética para transformar ambientes. Creemos en la innovación y la atención al detalle como
@@ -24,17 +26,25 @@
         </div>
 
         <div>
-            <div class="flex gap-5 h-[300px]">
+            <div class="animation-2 sm:hidden w-[300px]  h-[400px] pb-6">
+                <img src="/assets/images/team-4.jpg" alt="Descripción de la imagen"
+                    class="w-full h-full object-cover rounded-lg" />
+            </div>
+            <div class="animation-2 hidden sm:flex  gap-5 h-[300px]">
                 @for (cards of cardsAbout; track cards.id) {
                 <app-card-images [title]="cards.title" [imageUrl]="cards.imageUrl" [hoverText]="cards.hoverText">
                 </app-card-images>
 
                 }
+
             </div>
-            <div class="flex items-center p-12 w-[600px] bg-[#D77200] h-[290px] rounded-[20px]">
+
+            <div
+                class="animation-3 flex items-center p-10 md:p-12 w-[300px] sm:w-[600px] bg-[#D77200]  h-[400px] md:h-[290px] rounded-[20px]">
                 <div class="flex flex-col w-full justify-center gap-4">
-                    <p class="text-4xl font-bold">Nuestra Historia</p>
-                    <p class="text-2xl font-medium">Desde nuestros inicios, en Croma Interiorismo nos hemos dedicado a
+                    <p class="text-xl md:text-4xl font-bold">Nuestra Historia</p>
+                    <p class="text-lg md:text-2xl font-medium">Desde nuestros inicios, en Croma Interiorismo nos hemos
+                        dedicado a
                         transformar ideas en espacios llenos de vida. Cada
                         proyecto es una oportunidad para plasmar creatividad, funcionalidad y la esencia de nuestros
                         clientes</p>
