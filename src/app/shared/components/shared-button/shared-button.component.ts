@@ -1,8 +1,9 @@
 import { Component, input } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-shared-button',
-  imports: [],
+  imports: [RouterModule],
   templateUrl: './shared-button.component.html',
   styleUrl: './shared-button.component.css'
 })

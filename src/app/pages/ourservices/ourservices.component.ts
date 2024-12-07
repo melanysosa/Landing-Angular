@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { CardServicesComponent } from '../../shared/components/card-services/card-services.component';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-ourservices',

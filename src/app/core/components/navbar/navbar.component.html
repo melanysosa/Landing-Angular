@@ -1,24 +1,36 @@
 <nav
-    class="absolute w-full flex items-center justify-between transition-colors duration-300 bg-transparent ring-white ring-1 px-5 py-4">
+    class="absolute z-10 w-full flex justify-between transition-colors duration-300 bg-transparent ring-white ring-1 px-5 py-4 ">
+
     <div>
-        <li [routerLink]="['/']" class="list-none text-white uppercase font-bold cursor-pointer py-2">
+        <a [routerLink]="['/']" class="text-white uppercase font-bold cursor-pointer py-2">
             Croma.I
-        </li>
+        </a>
     </div>
 
-    <ul class="flex gap-5 list-none m-0">
-        <li [routerLink]="['/']" class="hover: text-white uppercase font-bold cursor-pointer px-4 py-2">
-            Inicio
+    <button class="text-white focus:outline-none lg:hidden" aria-label="Toggle Menu" (click)="toggleMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
+            class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5m-16.5 5.25h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </button>
+
+   
+    <ul [class.hidden]="!isMenuOpen"
+        class="absolute top-[70px] right-0 bg-opacity-80 text-white list-none p-4 rounded-md flex flex-col gap-4 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur-sm sm:backdrop-blur-none bg-orange-500/60">
+        <li>
+            <a [routerLink]="['/']" class="uppercase font-bold cursor-pointer px-4 py-2 hover:text-gray-300">Inicio</a>
         </li>
-        <li [routerLink]="['/about']" class="text-white uppercase font-bold cursor-pointer px-4 py-2">
-            Sobre Nosotros
+        <li>
+            <a [routerLink]="['/about']" class="uppercase font-bold cursor-pointer px-4 py-2 hover:text-gray-300">Sobre
+                Nosotros</a>
         </li>
-        
-        <li [routerLink]="['/ourservices']" class="text-white uppercase font-bold cursor-pointer px-4 py-2">
-            Servicios
+        <li>
+            <a [routerLink]="['/ourservices']"
+                class="uppercase font-bold cursor-pointer px-4 py-2 hover:text-gray-300">Servicios</a>
         </li>
-        <li [routerLink]="['/contact']" class="text-white uppercase font-bold cursor-pointer px-4 py-2">
-            Contacto
+        <li>
+            <a [routerLink]="['/contact']"
+                class="uppercase font-bold cursor-pointer px-4 py-2 hover:text-gray-300">Contacto</a>
         </li>
     </ul>
 </nav>
