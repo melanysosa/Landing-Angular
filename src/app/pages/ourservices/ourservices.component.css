@@ -12,7 +12,7 @@ animation: myAnim2 2s ease 0s 1 normal forwards;
 }
 @keyframes myAnim2 {
 	from {
-		transform: translateX(100px);
+		transform: translateX(50px);
 	}
 
 	to {
