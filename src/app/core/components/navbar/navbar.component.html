@@ -14,9 +14,9 @@
         </svg>
     </button>
 
-   
-    <ul [class.hidden]="!isMenuOpen"
-        class="absolute top-[70px] right-0 bg-opacity-80 text-white list-none p-4 rounded-md flex flex-col gap-4 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur-sm sm:backdrop-blur-none bg-orange-500/60">
+
+    <ul  (click)="toggleMenu()" [class.hidden]="!isMenuOpen"
+        class="absolute top-[70px] right-0 bg-opacity-80 text-white list-none p-4 rounded-md flex flex-col gap-4 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur-sm sm:backdrop-blur-none bg-orange-500/60 ">
         <li>
             <a [routerLink]="['/']" class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Inicio</a>
         </li>
