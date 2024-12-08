@@ -1,17 +1,14 @@
 <nav
-    class="absolute z-10 w-full flex justify-between transition-colors duration-300 bg-transparent  px-5 py-4 ">
+    class="absolute z-10 w-full flex justify-between transition-colors duration-300 bg-transparent  px-5 py-4 items-center ">
 
     <div>
-        <a [routerLink]="['/']" class="text-white  font-bold cursor-pointer py-2">
+        <a [routerLink]="['/']" class="text-white text-xl  font-bold cursor-pointer py-2">
             Croma.I
         </a>
     </div>
 
     <button class="text-white focus:outline-none lg:hidden" aria-label="Toggle Menu" (click)="toggleMenu()">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"
-            class="w-6 h-6">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5m-16.5 5.25h16.5m-16.5 5.25h16.5" />
-        </svg>
+    <i class="bi bi-list text-4xl" ></i>
     </button>
 
 

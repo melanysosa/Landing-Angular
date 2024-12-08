@@ -11,9 +11,21 @@
         </p>
 
         <div class="flex flex-wrap justify-start  gap-2 md:gap-4 w-full">
-            <p class="text-white text-sm md:text-lg">{{ email }}</p>
-            <p class="text-white text-sm md:text-lg">{{ instagram }}</p>
-            <p class="text-white text-sm md:text-lg">{{ telefono }}</p>
+
+    <div class="flex gap-2 items-center justify-center">
+        <i class="bi bi-envelope text-lg md:text-2xl"></i>
+        <p class="text-white text-sm md:text-lg">{{ email }}</p>
+    </div>
+    <div class="flex gap-2 items-center justify-center">
+        <i class="bi bi-instagram text-lg md:text-2xl"></i>
+        <p class="text-white text-sm md:text-lg">{{ instagram }}</p>
+    </div>
+    <div class="flex gap-2 items-center justify-center">
+        <i class="bi bi-whatsapp text-lg md:text-2xl"></i>
+        <p class="text-white text-sm md:text-lg">{{ telefono }}</p>
+    </div>
+
+          
         </div>
     </div>
 </section>
