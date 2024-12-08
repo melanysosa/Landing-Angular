@@ -4,7 +4,7 @@ import { CardServicesComponent } from '../../shared/components/card-services/car
 
 @Component({
   selector: 'app-about',
-  imports: [CardImagesComponent, CardServicesComponent],
+  imports: [CardImagesComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css',
 })
@@ -13,24 +13,18 @@ export class AboutComponent {
   cardsAbout = [
     {
       id: 1,
-      title: 'Diseño Residencial',
+      title: 'team1',
       imageUrl: '/assets/images/team-3.jpg',
-      hoverText:
-        'Creamos hogares que combinan confort, funcionalidad y estética, adaptándonos a tu estilo de vida y necesidades.',
     },
     {
       id: 2,
-      title: 'Diseño Comercial',
+      title: 'team2',
       imageUrl: '/assets/images/team-4.jpg',
-      hoverText:
-        'Creamos soluciones funcionales para negocios y empresas con diseños personalizados.',
     },
     {
       id: 3,
-      title: 'Consultoría de estilo',
+      title: 'team3',
       imageUrl: '/assets/images/team-2.jpg',
-      hoverText:
-        'Te ayudamos a definir el mejor estilo para tus espacios con soluciones únicas.',
     },
   ];
 }

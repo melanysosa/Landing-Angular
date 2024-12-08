@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 export class CardImagesComponent {
   @Input() title: string = '';
   @Input() imageUrl: string = '';
-  @Input() hoverText: string = '';
+
 }

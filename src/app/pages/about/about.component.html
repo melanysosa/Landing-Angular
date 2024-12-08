@@ -27,12 +27,12 @@
 
         <div>
             <div class="animation-2 sm:hidden w-[300px]  h-[400px] pb-6">
-                <img src="/assets/images/team-4.jpg" alt="Descripción de la imagen"
+                <img src="/assets/images/team-4.jpg" alt="imagen"
                     class="w-full h-full object-cover rounded-lg" />
             </div>
             <div class="animation-2 hidden sm:flex  gap-5 h-[300px]">
                 @for (cards of cardsAbout; track cards.id) {
-                <app-card-images [title]="cards.title" [imageUrl]="cards.imageUrl" [hoverText]="cards.hoverText">
+                <app-card-images [title]="cards.title" [imageUrl]="cards.imageUrl">
                 </app-card-images>
 
                 }
