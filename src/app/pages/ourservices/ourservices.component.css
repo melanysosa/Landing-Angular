@@ -4,27 +4,3 @@
   color: white;
   
 }
-.cards-components{
-    animation: myAnim 2s ease 0s 1 normal forwards;
-}
-.title-services{
-animation: myAnim2 2s ease 0s 1 normal forwards;
-}
-@keyframes myAnim2 {
-	from {
-		transform: translateX(50px);
-	}
-
-	to {
-		transform: translateX(0);
-	}
-}
-@keyframes myAnim {
-	from {
-		transform: scale(0.5);
-	}
-
-	to{
-		transform: scale(1);
-	}
-}
