@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CardImagesComponent } from '../../shared/components/card-images/card-images.component';
 import { CardServicesComponent } from '../../shared/components/card-services/card-services.component';
+import { CardImg } from '../../models/models';
 
 @Component({
   selector: 'app-about',
@@ -10,7 +11,7 @@ import { CardServicesComponent } from '../../shared/components/card-services/car
 })
 export class AboutComponent {
   imageUrl = '/assets/images/team-5.jpg';
-  cardsAbout = [
+  cardsAbout: CardImg[] = [
     {
       id: 1,
       title: 'team1',

@@ -1,34 +1,57 @@
-<nav
-    class="fixed sm:absolute z-10 w-full flex justify-between transition-colors duration-300 sm:bg-transparent bg-orange-500/60  px-5 py-4 items-center backdrop-blur-sm sm:backdrop-blur-none ">
-
-    <div>
-        <a [routerLink]="['/']" class="text-white text-xl  font-bold cursor-pointer py-2">
-            Croma.I
-        </a>
-    </div>
-
-    <button class="text-white focus:outline-none lg:hidden" aria-label="Toggle Menu" (click)="toggleMenu()">
-    <i class="bi bi-list text-4xl" ></i>
-    </button>
-
-
-    <ul  (click)="toggleMenu()" [class.hidden]="!isMenuOpen"
-        class="absolute top-[72px] right-0 bg-opacity-80 text-white list-none p-4  flex flex-col gap-6 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur- sm:backdrop-blur-none bg-orange-500/60 w-full sm:w-auto  h-[90vh] sm:h-full text-2xl sm:text-xl">
+<header class="fixed sm:absolute w-full  z-30">
+    <nav class="navbar w-full  text-white font-extrabold text-xl relative z-30">
+        <div class="bg-transparent backdrop-blur-[2px]  sm:backdrop-blur-none flex justify-between items-center absolute z-30 w-full px-6 py-8 ">
         
-        <li>
-            <i class="bi bi-dot sm:hidden"></i><a [routerLink]="['/']" class="font-bold cursor-pointer px-4 py-2 ring-bottom">Inicio</a>
-        </li>
-        <li>
-    <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/about']" class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Sobre
-                Nosotros</a>
-        </li>
-        <li>
-        <i class="bi bi-dot sm:hidden"></i>  <a [routerLink]="['/ourservices']"
-                class=" font-bold cursor-pointer px-4 py-2 ring-bottom ">Servicios</a>
-        </li>
-        <li>
-        <i class="bi bi-dot sm:hidden"></i>  <a [routerLink]="['/contact']"
-                class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Contacto</a>
-        </li>
-    </ul>
-</nav>
+            <p [routerLink]="['/']" class="text-white text-xl  font-bold cursor-pointer py-2">
+            Croma.I</p>
+
+
+            <button class="text-2xl md:hidden " (click)="toggleMenu()">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <ul class="hidden md:flex justify-between space-x-8 cursor-pointer ">
+                <li>
+                    <i class="bi bi-dot sm:hidden"></i><a [routerLink]="['/']"
+                        class="font-bold cursor-pointer px-4 py-2 ring-bottom ">Inicio</a>
+                </li>
+                <li>
+                    <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/about']"
+                        class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Sobre
+                        Nosotros</a>
+                </li>
+                <li>
+                    <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/ourservices']"
+                        class=" font-bold cursor-pointer px-4 py-2 ring-bottom ">Servicios</a>
+                </li>
+                <li>
+                    <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/contact']"
+                        class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Contacto</a>
+                </li>
+            </ul>
+        </div>
+
+    @if (isMenuOpen) {  <div class="md:hidden responsive  flex justify-center ">
+            <ul class="space-y-10  pt-40 bg-transparent  p-5  backdrop-blur-md absolute  z-10 w-full h-screen flex flex-col px-20"
+                (click)="toggleMenu()">
+            <li>
+                <i class="bi bi-dot sm:hidden"></i><a [routerLink]="['/']"
+                    class="font-bold cursor-pointer px-4 py-2 ring-bottom ">Inicio</a>
+            </li>
+            <li>
+                <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/about']"
+                    class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Sobre
+                    Nosotros</a>
+            </li>
+            <li>
+                <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/ourservices']"
+                    class=" font-bold cursor-pointer px-4 py-2 ring-bottom ">Servicios</a>
+            </li>
+            <li>
+                <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/contact']"
+                    class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Contacto</a>
+            </li>
+            </ul>
+        </div>}
+    </nav>
+</header>

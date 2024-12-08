@@ -10,5 +10,5 @@ import { RouterModule } from '@angular/router';
 export class CardServicesComponent {
   @Input() title: string = '';
   @Input() imageUrl: string = '';
-  @Input() hoverText: string = '';
+  @Input() text: string = '';
 }

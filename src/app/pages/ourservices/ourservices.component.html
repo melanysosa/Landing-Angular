@@ -5,8 +5,8 @@
         <p class="text-md md:text-lg font-medium mt-2">Diseñamos y transformamos espacios con soluciones a medida para cada necesidad.</p>
     </div>
 <div class="cards-components  flex lg:flex-row flex-col gap-10 justify-center items-center">
-    @for (service of services; track service.id) {
-    <app-card-services [title]="service.title" [imageUrl]="service.imageUrl" [hoverText]="service.hoverText">
+    @for (item of services; track item.id) {
+    <app-card-services [title]="item.title" [imageUrl]="item.imageUrl" [text]="item.text">
     </app-card-services>
     }
 </div>

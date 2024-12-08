@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { CardServicesComponent } from '../../shared/components/card-services/card-services.component';
 import { RouterModule } from '@angular/router';
+import { CardService } from '../../models/models';
+
 
 @Component({
   selector: 'app-ourservices',
@@ -9,12 +11,13 @@ import { RouterModule } from '@angular/router';
   styleUrl: './ourservices.component.css',
 })
 export class OurservicesComponent {
-  services = [
+
+  services: CardService[] = [
     {
       id: 1,
       title: 'Diseño Residencial',
       imageUrl: '/assets/images/d-residencial.jpg',
-      hoverText:
+      text:
         'Creamos hogares que combinan confort, funcionalidad y estética, adaptándonos a tu estilo de vida y necesidades.',
      
     },
@@ -22,7 +25,7 @@ export class OurservicesComponent {
       id: 2,
       title: 'Diseño Comercial',
       imageUrl: '/assets/images/d-comercial.jpg',
-      hoverText:
+      text:
         'Creamos soluciones funcionales para negocios y empresas con diseños personalizados.',
       
     },
@@ -30,7 +33,7 @@ export class OurservicesComponent {
       id: 3,
       title: 'Consultoría de estilo',
       imageUrl: '/assets/images/consultoria-estilo.jpg',
-      hoverText:
+      text:
         'Te ayudamos a definir el mejor estilo para tus espacios con soluciones únicas.',
      
     },
