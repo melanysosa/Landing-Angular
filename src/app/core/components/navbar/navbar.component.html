@@ -13,21 +13,21 @@
 
 
     <ul  (click)="toggleMenu()" [class.hidden]="!isMenuOpen"
-        class="absolute top-[72px] right-0 bg-opacity-80 text-white list-none p-4  flex flex-col gap-6 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur-md sm:backdrop-blur-none bg-orange-500/60 w-full sm:w-auto  h-[90vh] sm:h-full text-2xl sm:text-xl">
+        class="absolute top-[72px] right-0 bg-opacity-80 text-white list-none p-4  flex flex-col gap-6 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur- sm:backdrop-blur-none bg-orange-500/60 w-full sm:w-auto  h-[90vh] sm:h-full text-2xl sm:text-xl">
         
         <li>
-            <a [routerLink]="['/']" class="font-bold cursor-pointer px-4 py-2 ring-bottom">Inicio</a>
+            <i class="bi bi-dot sm:hidden"></i><a [routerLink]="['/']" class="font-bold cursor-pointer px-4 py-2 ring-bottom">Inicio</a>
         </li>
         <li>
-            <a [routerLink]="['/about']" class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Sobre
+    <i class="bi bi-dot sm:hidden"></i> <a [routerLink]="['/about']" class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Sobre
                 Nosotros</a>
         </li>
         <li>
-            <a [routerLink]="['/ourservices']"
+        <i class="bi bi-dot sm:hidden"></i>  <a [routerLink]="['/ourservices']"
                 class=" font-bold cursor-pointer px-4 py-2 ring-bottom ">Servicios</a>
         </li>
         <li>
-            <a [routerLink]="['/contact']"
+        <i class="bi bi-dot sm:hidden"></i>  <a [routerLink]="['/contact']"
                 class=" font-bold cursor-pointer px-4 py-2 ring-bottom">Contacto</a>
         </li>
     </ul>
