@@ -5,27 +5,30 @@
 
 
 .animation-home {
-  animation: anim3 2s ease 0s 1 normal forwards;
+  animation: anim3 1.5s ease-out forwards;
 
 }
 .animation-contact{
-    animation: anim3 2s ease 0s 1 normal forwards;
+    animation: anim3 1.5s ease-out forwards;
 }
 .cards-components{
-    animation: anim3 2s ease 0s 1 normal forwards;
+    animation: anim3 1.5s ease-out forwards;
 }
 .title-services{
-animation: anim2 2s ease 0s 1 normal forwards;
+animation: anim2 1.5s ease-out forwards;
+}
+.allSections{
+  animation: firstAnim 1.5s ease-out forwards;
 }
 @media (min-width: 768px) {
   .animation-about-1 {
-    animation: anim1 2s ease 0s 1 normal forwards;
+    animation: anim1 1.5s ease-out forwards;
   }
   .animation-about-2 {
-    animation: anim2 2s ease 0s 1 normal forwards;
+    animation: anim2 1.5s ease-out forwards;
   }
   .animation-about-3 {
-    animation: anim3 2s ease 0s 1 normal forwards;
+    animation: anim3 1.5s ease-out forwards;
   }
 }
 @media (max-width: 767px) {
@@ -33,7 +36,14 @@ animation: anim2 2s ease 0s 1 normal forwards;
     animation: anim3 2s ease 0s 1 normal forwards;
   }
 }
-
+@keyframes firstAnim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 @keyframes animCenter {
 	from{
 		transform: scaleY(0.4);
