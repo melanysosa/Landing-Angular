@@ -1,5 +1,5 @@
 <nav
-    class="fixed sm:absolute z-10 w-full flex justify-between transition-colors duration-300 sm:bg-transparent bg-black/50  px-5 py-4 items-center  ">
+    class="fixed sm:absolute z-10 w-full flex justify-between transition-colors duration-300 sm:bg-transparent bg-orange-500/60  px-5 py-4 items-center backdrop-blur-sm sm:backdrop-blur-none ">
 
     <div>
         <a [routerLink]="['/']" class="text-white text-xl  font-bold cursor-pointer py-2">
@@ -13,7 +13,7 @@
 
 
     <ul  (click)="toggleMenu()" [class.hidden]="!isMenuOpen"
-        class="absolute top-[70px] right-0 bg-opacity-80 text-white list-none p-4 rounded-md flex flex-col gap-6 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur-sm sm:backdrop-blur-none bg-orange-500/60 w-full sm:w-auto  h-[90vh] sm:h-full text-2xl sm:text-xl">
+        class="absolute top-[72px] right-0 bg-opacity-80 text-white list-none p-4  flex flex-col gap-6 lg:static lg:flex lg:flex-row lg:gap-5 lg:bg-transparent lg:bg-opacity-0 lg:p-0 lg:rounded-none backdrop-blur-md sm:backdrop-blur-none bg-orange-500/60 w-full sm:w-auto  h-[90vh] sm:h-full text-2xl sm:text-xl">
         
         <li>
             <a [routerLink]="['/']" class="font-bold cursor-pointer px-4 py-2 ring-bottom">Inicio</a>
